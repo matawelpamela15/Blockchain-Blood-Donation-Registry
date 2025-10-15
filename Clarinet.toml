@@ -1,0 +1,43 @@
+[project]
+name = 'Blockchain-Blood-Donation-Registry'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Blockchain-Blood-Donation-Registry]
+path = 'contracts/Blockchain-Blood-Donation-Registry.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.emergency-blood-request-feature]
+path = 'contracts/emergency-blood-request-feature.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.blood-inventory-tracker]
+path = 'contracts/blood-inventory-tracker.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.blood-donation-scheduler]
+path = 'contracts/blood-donation-scheduler.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.donor-loyalty-points]
+path = 'contracts/donor-loyalty-points.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
