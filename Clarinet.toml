@@ -29,6 +29,11 @@ epoch = 3.1
 path = 'contracts/donor-loyalty-points.clar'
 clarity_version = 3
 epoch = 3.1
+[contracts.blood-campaign-manager]
+path = 'contracts/blood-campaign-manager.clar'
+clarity_version = 3
+epoch = 3.1
+
 [repl.analysis]
 passes = ['check_checker']
 
